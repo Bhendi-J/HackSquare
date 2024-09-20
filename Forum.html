@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style_forum.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="dashboard border">
+              <a href="#">Dashboard</a>
+            </div>
+   
+            <div class="forum border">
+               <a href="#">Forum</a>
+            </div>
+   
+            <div class="marketplace border">
+               <a href="#">MarketPlace</a>
+   
+            </div>
+   
+            <div class="education border">
+               <a href="#">Educational Resources</a>
+            </div>
+   
+            <div class="signin border">
+               <a href="#"> Log In</a>
+           </div>
+        </div>
+     </header>
+   
+    <div class="forum_panel">
+        <nav class="Forum_bar">
+            <div class="icon">
+                <svg class="forum_logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-quote-fill" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm7.194 2.766a1.7 1.7 0 0 0-.227-.272 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.5 2.5 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.5 2.5 0 0 0-.228-.4 1.7 1.7 0 0 0-.227-.273 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+                  </svg>
+                <p class="community_forum">
+                    COMMUNITY FORUMS
+                </p>
+            </div>
+            <div class="search_bar">
+                <form class="search_nav" method="get">
+                    <input class="search" name="q" placeholder="Search">
+                    <button class="icon_search" type="submit"><svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+<div class="background_container">
+    <div class="container">
+        <div class="thread-list">
+            <h2>Forum Discussions</h2>
+            
+            <div class="thread">
+                <a href="#">what are the chances of rain?</a>
+                <p>Posted by Alice - 2 hours ago</p>
+            </div>
+    
+            <div class="thread">
+                <a href="#">How to get started with new fertilizers in market?</a>
+                <p>Posted by Bob - 5 hours ago</p>
+            </div>
+    
+            <div class="thread">
+                <a href="#">Best practices for organic farming</a>
+                <p>Posted by Charlie - 1 day ago</p>
+            </div>
+        </div>
+        <div class="new-thread">
+            <h2>Start a New Discussion</h2>
+            <form action="/post-thread" method="POST">
+                <input type="text" name="title" placeholder="Thread Title" required>
+                <textarea name="content" rows="5" placeholder="Write your discussion..." required></textarea>
+                <button type="submit">Post Thread</button>
+            </form>
+        </div>
+        <div class="reply-section">
+            <h2>Replies</h2>
+    
+            <div class="reply">
+                <p><strong>John:</strong> I think you should go with SVC 50 chemicals!</p>
+            </div>
+    
+            <div class="reply">
+                <p><strong>Jane:</strong> I think going for organic fertilizers</p>
+            </div>
+            <div class="reply-form">
+                <h3>Leave a Reply</h3>
+                <form action="/post-reply" method="POST">
+                    <textarea name="reply" rows="3" placeholder="Write your reply..." required></textarea>
+                    <button type="submit">Post Reply</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            <button>Back to Top</button>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Navigation</p>
+                <a></a>
+                <a>Home</a>
+                <a>Pages</a>
+                <a>About Us</a>
+                <a>Services</a>
+    
+            </ul>
+    
+            <ul>
+                <p>Quick Link</p>
+                <a>Contact Us</a>
+                <a>FAQs</a>
+                <a>Booking</a>
+                <a>Pages</a>
+    
+            </ul>
+    
+            <ul>
+                <p>Services</p>
+                <a>Home</a>
+                <a>Contact Us</a>
+                <a>Blog</a>
+                <a>404</a>
+    
+            </ul>
+    
+        </div>
+    
+        <div class="foot-panel4">
+    
+            <div class="copyright">
+                © 1996-2024, Shetkari.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+    
+</div>
+</body>
+</html>

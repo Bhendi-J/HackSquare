@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+.forum_panel{
+  background-color: #508D4E;
+  margin: 0;
+}
+.Forum_bar{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position:relative;
+}
+.forum_logo{
+  margin: 0 5px;
+}
+.icon{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+}
+
+svg{
+  margin: 0;
+}
+.community_forum{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  margin: 0 5px;
+}
+
+
+.search{
+  height: auto;
+  width: auto;
+  border: 0;
+
+}
+.search:hover{
+  margin: 1px;
+  
+}
+.search_nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0 5px 0 5px;
+}
+.search_icon{
+  margin: auto;
+  border: none;
+  background-color: white;
+}
+.icon_search{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0;
+
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #D6EFD8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+.thread-list {
+  margin-bottom: 20px;
+}
+
+.thread-list h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.thread {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.thread a {
+  text-decoration: none;
+  color: #1A5319;
+  font-weight: bold;
+}
+
+.thread p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.new-thread {
+  margin-bottom: 20px;
+}
+
+.new-thread input, .new-thread textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.new-thread button {
+  padding: 10px 15px;
+  background-color: #80AF81;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.background_container{
+  background-color: #1A5319;
+  background: url(background.jpg);
+  background-size: cover;
+}
+.new-thread button:hover {
+  background-color: #508D4E;
+}
+
+.reply-section {
+  margin-top: 30px;
+}
+
+.reply {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.reply p {
+  margin: 5px 0;
+}
+
+.reply-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.reply-form button {
+  padding: 10px 15px;
+  background-color: #508D4E;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reply-form button:hover {
+  background-color: #1A5319;
+}
+
+.navbar{
+  width:100%;
+  height: 60px;
+  background-color: #80AF81;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+a{
+  text-decoration: none;
+  color:#1a5319;
+}
+header{
+  padding: 0;
+
+}
+.border{
+  border:2px solid transparent;
+  border-radius: 2px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+.border:hover{
+  border:2px solid black;
+  border-radius: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.foot-panel1{
+  background-color: #D6EFD8;
+  height: 40px;
+  font-weight: bold;
+  color: #1a5319;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.6 rem;
+}
+
+button{
+ width: 100%;
+ height: 40px;
+  background-color:  #D6EFD8;
+  font-size: 1.6 rem;
+  font-weight: bold;
+  border: none;
+}
+.foot-panel2{
+  background-color:#80AF81 ;
+  color: black;
+  font-weight: bolder;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot-panel2 p{
+  margin-top: 25px;
+}
+.foot-panel2 ul a{
+   display: block;
+   font-size: 0.85rem;
+   margin-top: 10px;
+   color: #1a5319;
+   font-weight: bold;
+}
+
+.foot-panel4{
+  background-color: #1a5319;
+  height: 80px;
+  font-size: 0.7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.foot-pages{
+  padding-top: 25px;
+}
+
+.copyright{
+  padding-top: 5px;
+  color: white;
+}
+
+
+
